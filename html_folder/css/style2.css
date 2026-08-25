@@ -1,0 +1,24 @@
+ul li{
+    border: 1px solid yellow;
+} /* li가 중복인데 자손li까지 테두리해주고 */
+
+ul > li{
+    border: 1px solid purple;
+} /* 부등호가 있다면 그 아이만 지정해서 테두리가 설정됩니다 */
+
+h1, h2, h3{
+    border: 1px solid red;
+}
+
+ul li:nth-of-type(1) {
+    border: 1px solid red;
+}
+ul li:nth-of-type(2) {
+    border: 1px solid yellow;
+}
+ul li:nth-of-type(3) {
+    border: 1px solid green;
+}
+ul li:nth-of-type(4) {
+    border: 1px solid blue;
+}

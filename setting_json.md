@@ -1,14 +1,14 @@
 {
 "editor.wordWrap": "on",
-"editor.fontFamily": "d2coding, verdana",
+"editor.fontFamily": "d2coding, verdana",  기본폰트를 d2coding 없으면 verdana
 "editor.mouseWheelZoom":true,
 "editor.lineNumbers":"on",
-"editor.minimap.enabled":false,
-"powermode.enabled": false,
+"editor.minimap.enabled":false,         에디터 미니맵 비활성화
+"powermode.enabled": false,             타이핑 파티클 비활성화
 "powermode.maxExplosions": 60,
 "powermode.explosionSize": 20,
-"editor.colorDecorators": true,
-"editor.codeLens": false,
+"editor.colorDecorators": true,         색상지정시 미리보여주기 데코레이션 해줌
+"editor.codeLens": false,               
 "powermode.backgroundMode": "image",
 "powermode.enableShake":false,
 "vsicons.dontShowNewVersionMessage":true,
