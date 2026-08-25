@@ -1,0 +1,32 @@
+"editor.wordWrap": "on",
+"editor.fontFamily": "d2coding, verdana", # 에디터 기본폰트 d2coding 없다면 verdana 적용
+"editor.mouseWheelZomm":true,
+"editor.lineNumbers":"on",
+"editor.minimap.enabled":false,
+"powermode.enabled": false,
+"powermode.maxExplosions": 60,
+"powermode.explosionSize": 20,
+"editor.colorDecorators": true,
+"editor.codeLens": false,
+"powermode.backgroundMode": "image",
+"powermode.enableShake":false,
+"vsicons.dontShowNewVersionMessage":true,
+"liveServer.settings.CustomBrowser": "chrome",
+"liveServer.settings.donotVerifyTags":true,
+"fontAwesomeAutocomplete.triggerWord": "fa-",
+"editor.tabSize": 2,
+"prettier.tabWidth": 2,
+"prettier.useTabs": true,
+"[html]": {
+    "editor.defaultFormatter": "vscode.typescipt-language-features"
+},
+"[javascript]": {
+    "editor.defaultFormatter": "vscode.javascript-language-features"
+},
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"window.zoomLevel": -1
