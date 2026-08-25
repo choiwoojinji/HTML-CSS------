@@ -1,0 +1,23 @@
+h1 {
+    color: red; /* 슬래시별은 주석달기입니다 마무리도 닫아줘야합니다 */
+}
+
+* { /* 별은 전체를 의미하고 연결된 HTML에 전체를 말함. */
+    border: 1px solid red; /* border 3가지 정보를 지정하는 속성이다 현재는 두께 선모양 색상 */
+}
+
+h1 {
+    border: 1px solid red;
+}
+
+h2 {
+    border: 1px solid blue;
+}
+
+h3 {
+    border: 1px solid green;
+}
+
+p strong {
+    border: 1px solid purple; /* p자손인 스트롱을 지정하는거라 구분이 잘된다 */
+}

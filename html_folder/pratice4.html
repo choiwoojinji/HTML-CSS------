@@ -1,0 +1,24 @@
+<body>
+    <form action="/" method="post"> <!-- post 숨겨서보내기 비번등등에 쓴다 -->
+        <label>아이디</label>
+        <input type="text">
+        <label>비밀번호</label>
+        <input type="password">
+
+        <input type="reset">
+        <input type="submit">
+
+        <h1>축구사운드</h1>
+        <audio src="audio/soccer_sound.mp3" controls autoplay loop preload></audio> 
+        <!-- 자동재생은 브라우저정책 때문에 autoplay 무시돼요 -->
+        <audio src="audio/soccer_sound.mp3" autoplay loop preload></audio> <!-- 이렇게 하면 자동재생 대신 멈추기불가...-->
+
+        <h4>축구사운드 컨트롤즈만 넣어도 돼</h4>
+        <audio src="audio/soccer_sound.mp3" controls></audio>
+
+        <h6>힐링 강아지</h6>
+        <label>힐링 강아지 영상</label>
+        <video src="video/bag_in_puppy.mp4" controls poster="img/summer1.jpg" style="width: 300px;"></video>
+
+    </form> 
+</body>
