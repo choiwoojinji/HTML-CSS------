@@ -1,7 +1,70 @@
-ul li:nth-of-type(2n) {
+/* ul li:nth-of-type(2n) {
     border: 1px solid red;
-} /* 2의배수 2,4,6,8,10 등을 지정함 */
+} 2의배수 2,4,6,8,10 등을 지정함 */
 
 ol li:nth-of-type(3n) {
     border: 1px solid yellow;
+}
+
+/* ul li:nth-of-type(2n-1) {
+    border: 1px solid red;
+} 2의배수 2,4,6 에서 각각 1씩 빼버림 */
+
+/* ul li:last-child {
+    border: 1px solid red;
+} 마지막 li 요소만 적용됩니다 */
+
+ul li:nth-of-type(odd) {
+    border: 1px solid red;
+} /* 홀수 짝수만 실행함. odd even */
+
+ul li:nth-of-type(even) {
+    border: 1px solid chartreuse;
+} /* 홀수 짝수만 실행함. odd even */
+
+input[type="text"] {
+    border: 1px solid green;
+}
+
+input[type="password"] {
+    border: 1px solid red;
+}
+
+h1 {
+    border: 1px solid blue;
+}
+
+h1:hover {
+    border: 1px solid yellowgreen;
+}
+/* 가상선택자이고 요소위에 마우스대면 바뀜! */
+
+h2::before {
+    content: "before content";
+    color: aqua;
+}
+
+h2::after {
+    content: "after content";
+    color: red;
+}
+
+p.text1 {
+    border: 1px solid red
+}
+
+.text2 {
+    border: 1px solid blue;
+}
+
+#header {
+    border: 1px solid blue;
+}
+
+#section {
+        border: 1px solid rebeccapurple;
+}
+
+#footer {
+        border: 1px solid yellowgreen;
 }
