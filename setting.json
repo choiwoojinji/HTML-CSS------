@@ -4,7 +4,7 @@
 "editor.mouseWheelZoom":true,
 "editor.lineNumbers":"on",
 "editor.minimap.enabled":false,
-"powermode.enabled": false,
+"powermode.enabled": true,
 "powermode.maxExplosions": 60,
 "powermode.explosionSize": 20,
 "editor.colorDecorators": true,

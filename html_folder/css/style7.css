@@ -1,0 +1,88 @@
+article {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+article:nth-of-type(1) {
+    padding: 30px;
+}
+
+article:nth-of-type(2) {
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* 안쪽여백 설정하는 것 */
+/* 마패마패 마진, 패딩 바깥, 안쪽 */
+    /* box-sizing: border-box; 맨위에 값을 고대로 물려받음 */
+
+
+div {
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+}
+div:nth-of-type(1) {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+div:nth-of-type(2) {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: green;
+}
+div:nth-of-type(3) {
+    border-width: 10px;
+    border-style: dotted;
+    border-color: blue;
+}
+ /* SDD 솔대도 실선 짧은실선 점선 */
+
+ /* div:nth-of-type(1) {
+    border: 1px dotted red;
+ } 축약형으로 이렇게 사용하면 됩니다 */
+
+ p {
+    border: 1px solid red;
+    height: 100px;
+    display: block;
+ }
+
+ strong, em {
+    border: 1px solid blue;
+    height: 100px;
+    display: block;
+ }
+
+ li:nth-of-type(1) { background-color: #000;}
+ li:nth-of-type(2) { background-color: #111;}
+ li:nth-of-type(3) { background-color: #222;}
+ li:nth-of-type(4) { background-color: #333;}
+ li:nth-of-type(5) { background-color: #444;}
+ li:nth-of-type(6) { background-color: #555;}
+ li:nth-of-type(7) { background-color: #666;}
+ li:nth-of-type(8) { background-color: #777;}
+ li:nth-of-type(9) { background-color: #888;}
+ li:nth-of-type(10) { background-color: #999;}
+ li:nth-of-type(11) { background-color: #aaa;}
+ li:nth-of-type(12) { background-color: #bbb;}
+ li:nth-of-type(13) { background-color: #ccc;}
+ li:nth-of-type(14) { background-color: #ddd;}
+ li:nth-of-type(15) { background-color: #eee;}
+ li:nth-of-type(16) { background-color: #fff;}
+
+ section {
+    width: 1500px;
+    height: 500px;
+    border: 1px solid #000;
+    background-image: url(../img/summer2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+ }
+
+ /* center center 센센을 해줘야 정중앙이고 첫센은 가로중앙 두번째센은 세로중앙이다 */
+ /* 100% 50% 퍼퍼도 비슷한... 가로축 100% 세로 50% 지정함. 우측 중앙에 배치된다 */
+ /* size: contain 창비율맞춰 담다 cover 꽉 채워 덮다 */
