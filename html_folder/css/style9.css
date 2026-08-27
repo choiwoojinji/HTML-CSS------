@@ -1,0 +1,23 @@
+.wrap {
+    width: 800px;
+    height: 100px auto;
+    border: 5px solid black;
+}
+.wrap .left {
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    float: left;
+}
+.wrap .right {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    float: left;
+}
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* content 빈문자넣고 display 속성을 강제변경 clear both 부모요소 float 영향을 해제해서 높잇값을 인식가능 */
