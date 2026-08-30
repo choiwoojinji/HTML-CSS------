@@ -52,7 +52,7 @@ section:hover article {
     background-color: red;
 } */
 
-@keyframes rotation {
+/* @keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
@@ -74,16 +74,22 @@ article {
 article:hover {
     animation-play-state: paused;
 }
+ */
 
-
-
-
-
-
-
-
-
-
-
+article {
+    width: 500px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px auto;
+}
+article svg {
+    width: 100%;
+}
+article svg path {
+    fill: transparent;
+    stroke: red;
+    stroke-width: 1;
+}
 
 
