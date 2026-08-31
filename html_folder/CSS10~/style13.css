@@ -1,0 +1,9 @@
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 5px solid #000;
+    transform: rotate(0deg);
+}
+
+/* HTML의 id="값"을 CSS나 JS(querySelector)에서 가리킬 때는 항상 #값 형태로 씁니다. */

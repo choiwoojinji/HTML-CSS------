@@ -74,22 +74,31 @@ article {
 article:hover {
     animation-play-state: paused;
 }
- */
+*/
 
-article {
-    width: 500px;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    padding: 50px;
-    margin: 50px auto;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-article svg {
+main {
     width: 100%;
+    height: 100vh;
+    background-color: lightcoral;
 }
-article svg path {
-    fill: transparent;
-    stroke: red;
-    stroke-width: 1;
+section {
+    width: 100%;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-
-
+section article {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid #000;
+}
