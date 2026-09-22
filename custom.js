@@ -41,3 +41,12 @@ console.log(item3.nextElementSibling)
 // previousElementSibling = 이전(previous) 요소(element) 형제(sibling) → 바로 앞 형제
 // nextElementSibling = 다음(next) 요소(element) 형제(sibling) → 바로 뒤 형제
 
+const box = document.querySelector('#box');
+box.addEventListener('click', () => {
+    box.classList.toggle('rotated');
+});
+
+// #box를 클릭할 때마다 addEventListener로 'click' 이벤트를 감지합니다
+// classList.toggle('rotated')는 rotated 클래스가 없으면 추가하고, 있으면 제거합니다
+// style13.css의 #box.rotated 규칙과 transition 덕분에 클릭할 때마다 부드럽게 회전합니다
+

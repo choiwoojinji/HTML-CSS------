@@ -4,6 +4,15 @@
     background-color: aqua;
     border: 5px solid #000;
     transform: rotate(0deg);
+    transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 /* HTML의 id="값"을 CSS나 JS(querySelector)에서 가리킬 때는 항상 #값 형태로 씁니다. */
+
+#box.rotated {
+    transform: rotate(360deg);
+    background-color: coral;
+}
+
+/* box를 클릭하면 JS에서 rotated 클래스를 붙였다 뗐다 해서 회전 애니메이션이 재생됩니다 */
