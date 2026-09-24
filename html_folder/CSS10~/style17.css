@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+}
+
+.accordion {
+    width: 360px;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #f4f4f4;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.accordion-header:hover {
+    background-color: #e9e9e9;
+}
+
+.accordion-header.active {
+    background-color: #4a90d9;
+    color: #fff;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    /* max-height를 0에서 늘려가며 부드럽게 펼쳐지는 효과 */
+}
+
+.accordion-body p {
+    margin: 0;
+    padding: 14px 16px;
+    color: #555;
+    font-size: 14px;
+}
