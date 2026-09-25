@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+}
+
+.signup-form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+.field input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #4a90d9;
+}
+
+.field input.valid {
+    border-color: #3cb371;
+}
+
+.field input.invalid {
+    border-color: #e74c3c;
+}
+
+.field .message {
+    margin: 6px 0 0;
+    font-size: 12px;
+    min-height: 14px;
+}
+
+.field .message.valid {
+    color: #3cb371;
+}
+
+.field .message.invalid {
+    color: #e74c3c;
+}
+
+.signup-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90d9;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #3a7bc8;
+}
