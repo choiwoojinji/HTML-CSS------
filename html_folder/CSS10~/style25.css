@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.stopwatch {
+    width: 320px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.time {
+    margin: 0 0 24px;
+    font-size: 48px;
+    font-family: 'Courier New', monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn-group button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4a6cf7;
+    color: #fff;
+}
+
+.btn-group button.running {
+    background-color: #e74c3c;
+}
+
+#resetBtn {
+    background-color: #888;
+}
+
+/* tabular-nums: 숫자 폭을 똑같이 맞춰서 시간이 바뀔 때 글자가 흔들리지 않게 합니다. */
