@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.countdown-box {
+    width: 480px;
+    max-width: 90vw;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#targetDate {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.start-btn {
+    margin-left: 10px;
+    padding: 9px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4a4ae0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: #3838c0;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    padding: 12px 0;
+    background-color: #4a4ae0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.label {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.message {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #e03838;
+    font-weight: bold;
+    min-height: 18px;
+}
