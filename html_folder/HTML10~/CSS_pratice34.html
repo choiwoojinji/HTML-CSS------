@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS10~/style34.css">
+</head>
+<body>
+    <h1>드래그 앤 드롭 할 일 분류 연습</h1>
+
+    <div class="board">
+        <div class="column" id="todo" data-status="todo">
+            <h2>할 일</h2>
+            <div class="card" draggable="true">자료 조사하기</div>
+            <div class="card" draggable="true">디자인 시안 만들기</div>
+            <div class="card" draggable="true">발표 자료 정리</div>
+        </div>
+        <div class="column" id="doing" data-status="doing">
+            <h2>진행 중</h2>
+            <div class="card" draggable="true">코드 작성하기</div>
+        </div>
+        <div class="column" id="done" data-status="done">
+            <h2>완료</h2>
+            <div class="card" draggable="true">아이디어 회의</div>
+        </div>
+    </div>
+
+    <script src="../../pratice34.js"></script>
+</body>
+</html>
