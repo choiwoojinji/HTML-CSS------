@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.progress-wrap {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring__bg {
+    fill: none;
+    stroke: #e0e4ec;
+    stroke-width: 14;
+}
+
+.progress-ring__fg {
+    fill: none;
+    stroke: #5b7cfa;
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-dasharray: 502.4;
+    stroke-dashoffset: 502.4;
+    transition: stroke-dashoffset 0.4s ease;
+}
+
+.progress-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.buttons button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5b7cfa;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
