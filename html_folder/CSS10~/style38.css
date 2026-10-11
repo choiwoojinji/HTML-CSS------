@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+    display: flex;
+    gap: 6px;
+}
+
+.star {
+    font-size: 36px;
+    color: #d8dce6;
+    cursor: pointer;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star:hover {
+    transform: scale(1.15);
+}
+
+.star.hover,
+.star.selected {
+    color: #ffc542;
+}
+
+.rating-text {
+    font-size: 14px;
+    color: #555555;
+}
