@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+.ripple-btn {
+    position: relative;
+    overflow: hidden;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5b7cfa;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.ripple-btn:hover {
+    background-color: #4766e0;
+}
+
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-effect 600ms ease-out;
+    pointer-events: none;
+}
+
+@keyframes ripple-effect {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
