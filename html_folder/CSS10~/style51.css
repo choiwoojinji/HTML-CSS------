@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+body.dark {
+    background-color: #1e1f29;
+    color: #eee;
+}
+
+.card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.25s;
+}
+
+body.dark .card {
+    background-color: #2b2d3a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-desc {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #888;
+}
+
+body.dark .card-desc {
+    color: #aaa;
+}
+
+.switch {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    border-radius: 14px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+body.dark .switch {
+    background-color: #5b6eae;
+}
+
+.switch-knob {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.25s;
+}
+
+body.dark .switch-knob {
+    transform: translateX(24px);
+}
