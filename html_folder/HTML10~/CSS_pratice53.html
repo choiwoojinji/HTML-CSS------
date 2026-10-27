@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS10~/style53.css">
+</head>
+<body>
+    <h1>회원가입 폼 유효성 검사 연습</h1>
+
+    <form class="signup-form" id="signupForm" novalidate>
+        <div class="field">
+            <label for="username">아이디</label>
+            <input type="text" id="username" placeholder="4자 이상 입력하세요">
+            <p class="hint" id="usernameHint"></p>
+        </div>
+
+        <div class="field">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" placeholder="8자 이상 입력하세요">
+            <p class="hint" id="passwordHint"></p>
+        </div>
+
+        <div class="field">
+            <label for="passwordConfirm">비밀번호 확인</label>
+            <input type="password" id="passwordConfirm" placeholder="비밀번호를 다시 입력하세요">
+            <p class="hint" id="passwordConfirmHint"></p>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn" disabled>가입하기</button>
+        <p class="result" id="result"></p>
+    </form>
+
+    <script src="../../pratice53.js"></script>
+</body>
+</html>

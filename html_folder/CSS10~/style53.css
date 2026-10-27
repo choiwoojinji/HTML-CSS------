@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.field input {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #4dabf7;
+}
+
+.field input.valid {
+    border-color: #51cf66;
+}
+
+.field input.invalid {
+    border-color: #ff6b6b;
+}
+
+.hint {
+    margin: 6px 0 0;
+    font-size: 12px;
+    min-height: 14px;
+}
+
+.hint.valid {
+    color: #2f9e44;
+}
+
+.hint.invalid {
+    color: #e03131;
+}
+
+.submit-btn {
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4dabf7;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+}
+
+.submit-btn:not(:disabled):hover {
+    background-color: #339af0;
+}
+
+.result {
+    margin: 12px 0 0;
+    font-size: 13px;
+    text-align: center;
+    color: #2f9e44;
+}
