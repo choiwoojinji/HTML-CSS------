@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.counter-app {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#textInput {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#textInput:focus {
+    outline: none;
+    border-color: #4dabf7;
+}
+
+.counter-result {
+    align-self: flex-end;
+    margin: 8px 0 0;
+    font-size: 13px;
+    color: #495057;
+}
+
+.counter-result.warning {
+    color: #e03131;
+    font-weight: bold;
+}
