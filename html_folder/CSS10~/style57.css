@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.quote-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 17px;
+    line-height: 1.5;
+    min-height: 60px;
+    margin: 0 0 12px;
+}
+
+.quote-author {
+    font-size: 14px;
+    color: #868e96;
+    margin: 0 0 20px;
+}
+
+#newQuoteBtn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4dabf7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#newQuoteBtn:hover {
+    background-color: #339af0;
+}
