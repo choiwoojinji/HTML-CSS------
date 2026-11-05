@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.rating {
+    display: flex;
+    gap: 6px;
+}
+
+.star {
+    font-size: 36px;
+    line-height: 1;
+    border: none;
+    background: none;
+    color: #d1d5db;
+    cursor: pointer;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.star:hover {
+    transform: scale(1.15);
+}
+
+.star.hover,
+.star.selected {
+    color: #f5a623;
+}
+
+.rating-text {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #495057;
+}
