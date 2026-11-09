@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.timer-card {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.time-display {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    transition: color 0.2s ease;
+}
+
+.time-display.ending {
+    color: #e74c3c;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.btn-group button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #eef1f5;
+    color: #555;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-group button:hover {
+    background-color: #e0e4ea;
+}
+
+#startBtn {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+#startBtn:hover {
+    background-color: #3c7fcb;
+}
+
+.status {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
