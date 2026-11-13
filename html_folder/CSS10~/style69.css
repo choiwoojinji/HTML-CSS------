@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.card {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.field label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.field input {
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ccd3dc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.field input:focus {
+    border-color: #4a90e2;
+}
+
+.calc-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.calc-btn:hover {
+    background-color: #3a7bc8;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+.bmi-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.bmi-category {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #666;
+}
+
+.bmi-category.under {
+    color: #4a90e2;
+}
+
+.bmi-category.normal {
+    color: #2ecc71;
+}
+
+.bmi-category.over {
+    color: #f1c40f;
+}
+
+.bmi-category.obese {
+    color: #e74c3c;
+}
