@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.card {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4a90e2;
+    font-family: 'Courier New', monospace;
+}
+
+.btn-group {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.start-btn {
+    background-color: #4a90e2;
+}
+
+.start-btn:hover {
+    background-color: #3a7bc8;
+}
+
+.start-btn.running {
+    background-color: #e25c5c;
+}
+
+.start-btn.running:hover {
+    background-color: #c84a4a;
+}
+
+.lap-btn {
+    background-color: #8e8e8e;
+}
+
+.lap-btn:hover {
+    background-color: #767676;
+}
+
+.reset-btn {
+    background-color: #b0b0b0;
+}
+
+.reset-btn:hover {
+    background-color: #999999;
+}
+
+.lap-list {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+    list-style: none;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.lap-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 4px;
+    font-size: 13px;
+    color: #444;
+}
+
+.lap-list li:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
