@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS10~/style74.css">
+</head>
+<body>
+    <h1>메모리 카드 매칭 게임(Memory Card Game) 연습</h1>
+
+    <div class="card">
+        <div class="status">
+            <div class="status-item">
+                <span class="status-label">시도</span>
+                <span class="status-value" id="movesValue">0</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">맞춘 쌍</span>
+                <span class="status-value" id="matchValue">0 / 8</span>
+            </div>
+        </div>
+
+        <div class="board" id="board"></div>
+
+        <p class="message" id="message"></p>
+
+        <button class="retry-btn" id="retryBtn">다시 시작</button>
+    </div>
+
+    <script src="../../pratice74.js"></script>
+</body>
+</html>

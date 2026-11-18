@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.card {
+    width: 420px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.status-label {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.status-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.tile {
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.tile:hover {
+    transform: scale(1.04);
+}
+
+.tile.open {
+    background-color: #eef1f6;
+}
+
+.tile.matched {
+    background-color: #d4f3dd;
+    cursor: default;
+    transform: none;
+}
+
+.message {
+    min-height: 20px;
+    margin: 16px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2fae58;
+}
+
+.retry-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #8e8e8e;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.retry-btn:hover {
+    background-color: #767676;
+}
