@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.card {
+    width: 420px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    gap: 8px;
+}
+
+.star {
+    font-size: 40px;
+    color: #d0d0d0;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star:hover {
+    transform: scale(1.15);
+}
+
+.star.hovered {
+    color: #ffb400;
+}
+
+.star.selected {
+    color: #f5a623;
+}
+
+.result {
+    min-height: 18px;
+    margin: 16px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #767676;
+}
