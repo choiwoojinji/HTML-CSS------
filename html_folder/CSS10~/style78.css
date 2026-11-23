@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.card {
+    width: 360px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+input[type="password"]:focus {
+    border-color: #4a90e2;
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #e6e6e6;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #e74c3c;
+    transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.strength-text {
+    margin: 10px 0 0 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #767676;
+}
+
+.rules {
+    list-style: none;
+    margin: 18px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.rules li {
+    font-size: 13px;
+    color: #999;
+    padding-left: 22px;
+    position: relative;
+}
+
+.rules li::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+}
+
+.rules li.met {
+    color: #27ae60;
+}
+
+.rules li.met::before {
+    content: '✓';
+    color: #27ae60;
+}
