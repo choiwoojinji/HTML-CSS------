@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-family: verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+}
+
+.card {
+    width: 260px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+}
+
+.like-btn:hover {
+    background-color: #ffe3e8;
+}
+
+.heart {
+    font-size: 32px;
+    transition: transform 0.25s ease;
+}
+
+.like-btn.liked .heart {
+    animation: pop 0.35s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+
+.like-btn.liked::before,
+.like-btn.liked::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #ff4d6d;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: burst 0.5s ease-out;
+}
+
+.like-btn.liked::after {
+    animation-delay: 0.1s;
+}
+
+@keyframes burst {
+    0% {
+        transform: scale(0.6);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.count-text {
+    margin: 18px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #767676;
+}
